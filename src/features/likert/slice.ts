@@ -23,10 +23,13 @@ export const likertSlice = createSlice({
     ) => {
       state[action.payload.shortName] = action.payload.value;
     },
+    reset: (state) => {
+      state = initialState;
+    },
   },
 });
 
-export const { update } = likertSlice.actions;
+export const { update, reset } = likertSlice.actions;
 
 // I have no idea if this is correct
 export const selectSpectrumValue = (state: RootState, spectrum: string) =>
