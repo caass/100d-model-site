@@ -1,6 +1,7 @@
 name = "100d-model"
 type = "webpack"
-route = "*"
+
+routes = ["*.100dimensionalpoliticalmodel.com/*", "100dimensionalpoliticalmodel.com/*"]
 
 [site]
 bucket = "build"
