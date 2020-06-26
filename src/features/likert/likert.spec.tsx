@@ -1,12 +1,12 @@
-import { axes, isGroup, SpectrumAxis } from "./axes";
+import { axes, isGroup, SpectrumAxis } from './axes';
 
-it("has appropriately long endpoint names", () => {
+it('has appropriately long endpoint names', () => {
   const getEndpointLabels = (axis: SpectrumAxis): string[] => {
     return axis.endpoints.map(({ label }) => label);
   };
   const endpointLabels: string[] = axes.flatMap((val) => {
     return isGroup(val)
-      ? val.axes.flatMap(getEndpointLabels)
+      ? val.axes.flatMap((axis) => getEndpointLabels(axis))
       : getEndpointLabels(val);
   });
 
@@ -16,11 +16,9 @@ it("has appropriately long endpoint names", () => {
   });
 });
 
-it("has unique shortNames", () => {
+it('has unique shortNames', () => {
   const shortNames = axes.flatMap((val) => {
-    return isGroup(val)
-      ? val.axes.flatMap(({ shortName }) => shortName)
-      : val.shortName;
+    return isGroup(val) ? val.axes.flatMap(({ shortName }) => shortName) : val.shortName;
   });
 
   const shortNamesSet = new Set(shortNames);
@@ -28,7 +26,7 @@ it("has unique shortNames", () => {
   expect(shortNames.length).toBe(shortNamesSet.size);
 });
 
-it("has unique icons", () => {
+it('has unique icons', () => {
   const getEndpointIcons = (axis: SpectrumAxis): string[] => {
     const rawIcons = axis.endpoints.map(({ icon }) => icon.iconName);
     // allow dupes on the same spectrum -- those are memes
@@ -39,18 +37,17 @@ it("has unique icons", () => {
     return isGroup(val) ? [] : getEndpointIcons(val);
   });
 
-  const iconsSet = Array.from(new Set(icons));
+  const iconsSet = [...new Set(icons)];
 
   expect(icons).toStrictEqual(iconsSet);
 });
 
-it("has well-formed titles", () => {
+it('has well-formed titles', () => {
   const titles = axes.flatMap((val) => {
     if (isGroup(val)) {
       return [val.label, ...val.axes.map(({ longName }) => longName)];
-    } else {
-      return val.longName;
     }
+    return val.longName;
   });
 
   /*
@@ -68,7 +65,7 @@ it("has well-formed titles", () => {
 
   titles.forEach((t) =>
     expect(t).toMatch(
-      /(^$)|(^[A-Z]{1,}[a-z]*(\s.*)?$)|(^([A-Z]{1}[a-z]+\/?){2,})|(^[A-Z]{1}[a-z]*-[A-Z]{1}[a-z]*)|(genocide)/
+      /(^$)|(^[A-Z]+[a-z]*(\s.*)?$)|(^([A-Z][a-z]+\/?){2,})|(^[A-Z][a-z]*-[A-Z][a-z]*)|(genocide)/
     )
   );
 });

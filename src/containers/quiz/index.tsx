@@ -1,18 +1,14 @@
-import React, { FC } from "react";
-import Likert, { axes, isGroup } from "../../features/likert";
-import styles from "./styles.module.css";
+import React, { FC } from 'react';
+import { Likert, axes, isGroup } from '../../features/likert';
+import styles from './styles.module.css';
 
-const Quiz: FC = () => {
+export const Quiz: FC = () => {
   return (
-    <div className={styles["quiz-body"]}>
+    <div className={styles['quiz-body']}>
       {axes.map((props) => (
-        <Likert
-          {...props}
-          key={isGroup(props) ? props.label : props.shortName}
-        />
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        <Likert {...props} key={isGroup(props) ? props.label : props.shortName} />
       ))}
     </div>
   );
 };
-
-export default Quiz;

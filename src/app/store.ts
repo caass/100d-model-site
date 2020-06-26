@@ -1,6 +1,8 @@
-import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
-import counterReducer from "../features/counter/counterSlice";
-import likertReducer from "../features/likert/slice";
+/* eslint-disable import/no-cycle */
+import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import counterReducer from '../features/counter/counterSlice';
+import likertReducer from '../features/likert/slice';
+/* eslint-enable import/no-cycle */
 
 export const store = configureStore({
   reducer: {
