@@ -32,7 +32,7 @@ it("has unique icons", () => {
   const getEndpointIcons = (axis: SpectrumAxis): string[] => {
     const rawIcons = axis.endpoints.map(({ icon }) => icon.iconName);
     // allow dupes on the same spectrum -- those are memes
-    return rawIcons[0] === rawIcons[1] ? [] : rawIcons;
+    return rawIcons[0] === rawIcons[1] ? [rawIcons[0]] : rawIcons;
   };
 
   const icons: string[] = axes.flatMap((val) => {
@@ -42,4 +42,32 @@ it("has unique icons", () => {
   const iconsSet = Array.from(new Set(icons));
 
   expect(icons).toStrictEqual(iconsSet);
+});
+
+it("has well-formed titles", () => {
+  const titles = axes.flatMap((val) => {
+    if (isGroup(val)) {
+      return [val.label, ...val.axes.map(({ longName }) => longName)];
+    } else {
+      return val.longName;
+    }
+  });
+
+  /*
+  bad title
+  [blanks are ok]
+  Good Title
+  Also Ok?
+  Good/Title
+  Bad/title
+  Goodtitle
+  EXTREMELY good title
+  genocide With a Small G is a Good Title
+  */
+
+  titles.forEach((t) =>
+    expect(t).toMatch(
+      /(^$)|(^[A-Z]{1,}[a-z]*(\s.*)?$)|(^([A-Z]{1}[a-z]+\/?){2,})|(^[A-Z]{1}[a-z]*-[A-Z]{1}[a-z]*)|(genocide)/
+    )
+  );
 });

@@ -31,7 +31,15 @@ const SingleAxis: FC<SpectrumAxis> = ({
 
   const options: SpectrumEndpoint[] = [endpoints[0]];
   if (endpoints.length === 2) {
-    options.push(centerOption, centerOption, endpoints[1]);
+    if (
+      endpoints[0].label === endpoints[1].label &&
+      endpoints[0].icon.iconName === endpoints[1].icon.iconName
+    ) {
+      options.push(endpoints[0], endpoints[0]);
+    } else {
+      options.push(centerOption, centerOption);
+    }
+    options.push(endpoints[1]);
   } else {
     options.push(
       centerOption,

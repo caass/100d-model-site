@@ -165,6 +165,9 @@ import {
   faAmericanSignLanguageInterpreting,
   faUserFriends,
   faNotEqual,
+  faMehRollingEyes,
+  faKissWinkHeart,
+  faFrownOpen,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faAmazon,
@@ -296,11 +299,11 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
           "On the de-acceleration side, you have anarcho-primitivists, who are essentially luddites who want to stop the flow of technology because they think it's damaging to humans as a whole. On the other end, you have trans-humanists, who want to accelerate the progress of technology so they can finally get that robot dick they've always wanted.",
         endpoints: [
           {
-            label: "Deccel.",
+            label: "Deccelerate",
             icon: faHandPointLeft,
           },
           {
-            label: "Accel.",
+            label: "Accelerate",
             icon: faHandPointRight,
           },
         ],
@@ -312,11 +315,11 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
           "There exists economically left-wing accelerationists, who believe in communism, but think the way to do that is to endorse the free market to the point that it collapses, and from the rubble of that collapse, build the communism out of that.",
         endpoints: [
           {
-            label: "Deccel.",
+            label: "Deccelerate",
             icon: faHandPointLeft,
           },
           {
-            label: "Accel.",
+            label: "Accelerate",
             icon: faHandPointRight,
           },
         ],
@@ -325,14 +328,14 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
         shortName: "cultural-accel",
         longName: "Cultural",
         description:
-          '[Jreg] made a video on cultural accelerationism called "The Reverse Ethnostate"',
+          'Jreg made a video on cultural accelerationism called "The Reverse Ethnostate"',
         endpoints: [
           {
-            label: "Deccel.",
+            label: "Deccelerate",
             icon: faHandPointLeft,
           },
           {
-            label: "Accel.",
+            label: "Accelerate",
             icon: faHandPointRight,
           },
         ],
@@ -730,105 +733,98 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "racial-eugenics",
         longName: "Racial Eugenics",
-
         endpoints: [
-          {
-            label: "Sterilize",
-            icon: faSyringe,
-          },
           {
             label: "Fertilize",
             icon: faBaby,
+          },
+          {
+            label: "Sterilize",
+            icon: faSyringe,
           },
         ],
       },
       {
         shortName: "economic-eugenics",
         longName: "Economic Eugenics",
-
         endpoints: [
-          {
-            label: "Sterilize",
-            icon: faSyringe,
-          },
           {
             label: "Fertilize",
             icon: faBaby,
+          },
+          {
+            label: "Sterilize",
+            icon: faSyringe,
           },
         ],
       },
       {
         shortName: "abled-eugenics",
         longName: "Abled Eugenics",
-
         endpoints: [
-          {
-            label: "Sterilize",
-            icon: faSyringe,
-          },
           {
             label: "Fertilize",
             icon: faBaby,
+          },
+          {
+            label: "Sterilize",
+            icon: faSyringe,
           },
         ],
       },
       {
         shortName: "iq-eugenics",
         longName: "IQ Eugenics",
-
         endpoints: [
-          {
-            label: "Sterilize",
-            icon: faSyringe,
-          },
           {
             label: "Fertilize",
             icon: faBaby,
+          },
+          {
+            label: "Sterilize",
+            icon: faSyringe,
           },
         ],
       },
       {
         shortName: "ideological-eugenics",
         longName: "Ideological Eugenics",
-
         endpoints: [
-          {
-            label: "Sterilize",
-            icon: faSyringe,
-          },
           {
             label: "Fertilize",
             icon: faBaby,
+          },
+          {
+            label: "Sterilize",
+            icon: faSyringe,
           },
         ],
       },
       {
         shortName: "eugenicist-eugenics",
         longName: "Eugenicist Eugenics",
-
         endpoints: [
-          {
-            label: "Sterilize",
-            icon: faSyringe,
-          },
           {
             label: "Fertilize",
             icon: faBaby,
+          },
+          {
+            label: "Sterilize",
+            icon: faSyringe,
           },
         ],
       },
       {
         shortName: "me-eugenics",
         longName: "Just fucking euthanize me",
-
         endpoints: [
-          {
-            label: "Sterilize",
-            icon: faSyringe,
-          },
           {
             label: "Fertilize",
             icon: faBaby,
+          },
+          {
+            label: "Sterilize",
+            icon: faSyringe,
           },
         ],
       },
@@ -1014,11 +1010,11 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
     endpoints: [
       {
         label: "oof",
-        icon: faMehBlank,
+        icon: faMehRollingEyes,
       },
       {
-        label: "uhh... sorry?",
-        icon: faMehBlank,
+        label: "it's ok bb shh",
+        icon: faKissWinkHeart,
       },
     ],
   },
@@ -1061,7 +1057,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
     endpoints: [
       {
         label: "Ew.",
-        icon: faHandMiddleFinger,
+        icon: faFrownOpen,
       },
       {
         label: "Hell yeah",
@@ -1181,7 +1177,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
   },
   {
     shortName: "slurs",
-    longName: "Why Are You Using That Slur?",
+    longName: "Slur Usage",
     description:
       "Why are proponents of this ideology using a slur? Are they using it because they're parts of the group that the slur refers to, or just talking about the slur in general a la free-spech absolutism, or are they using it to specifically harm the groups that they're targeting?",
     endpoints: [
