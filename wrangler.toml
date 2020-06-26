@@ -1,4 +1,4 @@
-name = "100d-model"
+name = "100d-model-site"
 type = "webpack"
 
 routes = ["www.100dimensionalpoliticalmodel.com/*", "100dimensionalpoliticalmodel.com/*"]
