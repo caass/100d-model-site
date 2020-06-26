@@ -87,6 +87,7 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   opacity: 0.5;
+  margin-bottom: 2.5rem;
 }
 
 .form-option label span {

@@ -163,6 +163,8 @@ import {
   faCrown,
   faDiceD20,
   faAmericanSignLanguageInterpreting,
+  faUserFriends,
+  faNotEqual,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faAmazon,
@@ -294,11 +296,11 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
           "On the de-acceleration side, you have anarcho-primitivists, who are essentially luddites who want to stop the flow of technology because they think it's damaging to humans as a whole. On the other end, you have trans-humanists, who want to accelerate the progress of technology so they can finally get that robot dick they've always wanted.",
         endpoints: [
           {
-            label: "Decceleration",
+            label: "Deccel.",
             icon: faHandPointLeft,
           },
           {
-            label: "Acceleration",
+            label: "Accel.",
             icon: faHandPointRight,
           },
         ],
@@ -310,11 +312,11 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
           "There exists economically left-wing accelerationists, who believe in communism, but think the way to do that is to endorse the free market to the point that it collapses, and from the rubble of that collapse, build the communism out of that.",
         endpoints: [
           {
-            label: "Decceleration",
+            label: "Deccel.",
             icon: faHandPointLeft,
           },
           {
-            label: "Acceleration",
+            label: "Accel.",
             icon: faHandPointRight,
           },
         ],
@@ -326,11 +328,11 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
           '[Jreg] made a video on cultural accelerationism called "The Reverse Ethnostate"',
         endpoints: [
           {
-            label: "Decceleration",
+            label: "Deccel.",
             icon: faHandPointLeft,
           },
           {
-            label: "Acceleration",
+            label: "Accel.",
             icon: faHandPointRight,
           },
         ],
@@ -469,11 +471,11 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
 
         endpoints: [
           {
-            label: "Non-Binary Exclusive",
+            label: "Enby Exclusive",
             icon: faVenusMars,
           },
           {
-            label: "Non-Binary Inclusive",
+            label: "Enby Inclusive",
             icon: faMercury,
           },
         ],
@@ -565,11 +567,11 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       "You can be a collectivist anarchist, or you could even be an individualist totalitarian.",
     endpoints: [
       {
-        label: "Collectivism",
+        label: "Collective",
         icon: faUsers,
       },
       {
-        label: "Individualism",
+        label: "Individual",
         icon: faUser,
       },
     ],
@@ -613,11 +615,11 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       "Hawks, on one end of the spectrum, like to use direct military intervention as quick as they can, while doves try to use non-military and more pacifistic approaches.",
     endpoints: [
       {
-        label: "Militaristic",
+        label: "Hawk",
         icon: faFighterJet,
       },
       {
-        label: "Pacifistic",
+        label: "Dove",
         icon: faDove,
       },
     ],
@@ -657,14 +659,14 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
     shortName: "inheritance",
     longName: "Inheritance",
     description:
-      "On one end, people's parents can give them all the advantages they could ever want in life. On the other end of the spectrum, all children would be raised communally so everyone grows up in exactly equal conditions.",
+      "On one end, people's parents can give them all the advantages they could ever want in life. On the other end of the spectrum, all children would be raised communally so everyone grows up in exactly equal conditions, with nobody having any parental advantage.",
     endpoints: [
       {
-        label: "High Parental Advantage",
+        label: "High Advantage",
         icon: faBabyCarriage,
       },
       {
-        label: "Low Parental Advantage",
+        label: "Low Advantage",
         icon: faSchool,
       },
     ],
@@ -673,18 +675,18 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
     shortName: "wealth-control",
     longName: "Control Over Wealth",
     description:
-      "Does the state control where the money goes, or does the individual control where the money goes?",
+      "Does the state control where the money goes, do corporations control where the money goes, or does the individual control where the money goes?",
     endpoints: [
       {
         label: "People",
-        icon: faUsers,
+        icon: faUserFriends,
       },
       {
         label: "State",
         icon: faLandmark,
       },
       {
-        label: "Corporations",
+        label: "Corp.",
         icon: faBuilding,
       },
     ],
@@ -711,7 +713,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       "You may associate the left with environmental protection, but that's not a rule. This is why you have stuff like eco-fascism.",
     endpoints: [
       {
-        label: "Drill, baby! Drill!",
+        label: "Drill, baby, drill!",
         icon: faIndustry,
       },
       {
@@ -839,7 +841,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       "How many kids do you think people should be having, in general, across the world at this point in time? On the far left, there's anti-natalists, who think that just being born is a great injustice, and that we shouldn't be doing that to anybody else.",
     endpoints: [
       {
-        label: "Anti-Natalist",
+        label: "Correct",
         icon: faPills,
       },
       {
@@ -917,7 +919,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
     endpoints: [
       {
         label: "Impossible",
-        icon: faTimesCircle,
+        icon: faNotEqual,
       },
       {
         label: "Pass the Blunt",
@@ -1058,11 +1060,11 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
     description: "If this ideology was a person, would you fuck them?",
     endpoints: [
       {
-        label: "Never in a million years",
+        label: "Ew.",
         icon: faHandMiddleFinger,
       },
       {
-        label: "All day every day",
+        label: "Hell yeah",
         icon: faAmericanSignLanguageInterpreting,
       },
     ],
@@ -1109,7 +1111,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
         icon: faSoap,
       },
       {
-        label: "Literally Constantly",
+        label: "Wasted",
         icon: faBong,
       },
     ],
@@ -1133,10 +1135,10 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
     shortName: "theory",
     longName: "Theory Literacy",
     description:
-      "The 60th spectrum is how likely proponents of this ideology are to read political theory",
+      "The 60th spectrum is how likely proponents of this ideology are to read political theory.",
     endpoints: [
       {
-        label: "Removed from Reality",
+        label: "Bookworm",
         icon: faBookReader,
       },
       {
@@ -1181,14 +1183,14 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
     shortName: "slurs",
     longName: "Why Are You Using That Slur?",
     description:
-      "Why are proponents of this ideology using a slur? Are they using it because they're parts of the group that the slur refers to, or just talking about the slur in general, or are they using it to specifically harm the groups that they're targeting?",
+      "Why are proponents of this ideology using a slur? Are they using it because they're parts of the group that the slur refers to, or just talking about the slur in general a la free-spech absolutism, or are they using it to specifically harm the groups that they're targeting?",
     endpoints: [
       {
-        label: "In-Group Use / Reclamation",
+        label: "Reclamation",
         icon: faRecycle,
       },
       {
-        label: "Free Speech Absolutism",
+        label: "Absolutism",
         icon: faComments,
       },
       {
@@ -1271,7 +1273,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
         icon: faCut,
       },
       {
-        label: "(((((((Globalist)))))))",
+        label: "((( )))",
         icon: faPassport,
       },
     ],
@@ -1442,11 +1444,11 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       'On the punitive end of the spectrum, you have people who think that punishments for criminals should be harsh. On the rehabilitative end of the spectrum, you have people with wacky ideas like "Maybe criminals can change" and "Maybe we should be investing more into mental health services for them so they can rehabilitate.',
     endpoints: [
       {
-        label: "Punitive",
+        label: "Punish",
         icon: faShieldAlt,
       },
       {
-        label: "Rehabilitative",
+        label: "Rehabilitate",
         icon: faHeadSideVirus,
       },
     ],
@@ -1458,11 +1460,11 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       "Nobody still denies climate change -- it's just levels of thinking about it. On one end of the spectrum you have people who think about it a lot, and on the other end you have people who never think about it.",
     endpoints: [
       {
-        label: "No thoughts head empty",
+        label: "Head empty",
         icon: faThermometerEmpty,
       },
       {
-        label: "Constantly in a state of panic",
+        label: "Can't stop worrying",
         icon: faThermometerFull,
       },
     ],
@@ -1474,11 +1476,11 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       "On one end of the spectrum you have people who might be extremists themselves, but empathize with the centrists. And of course, the centrists themselves. On the other end of the spectrum, you have anti-centrists.",
     endpoints: [
       {
-        label: "Centrist Sympathizer",
+        label: "Sympathizer",
         icon: faCompressArrowsAlt,
       },
       {
-        label: "Anti-Centrist",
+        label: "Every Extreme...",
         icon: faExpandArrowsAlt,
       },
     ],
@@ -1506,7 +1508,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       'Constructivists think that things are how they are because the environment around them shaped them that way. Essentialists think that things are the way they are because they just _are_ that way. For example, constructivists tend to be in favor of rehabilitative justice because a criminal is a criminal because the environment created that criminal, while essentialists think the criminal was born a criminal and we should just throw them in jail forever because they\'re probably never going to change. The same thing goes for broader issues, like capitalism. Constructivists might say "Capitalism is just a byproduct of its environment, and we can remove it." An essentialist might say "Capitalism is there because capitalism needs to be there."',
     endpoints: [
       {
-        label: "Constructivist",
+        label: "Construct.",
         icon: faShapes,
       },
       {
@@ -1574,7 +1576,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
         icon: faUndoAlt,
       },
       {
-        label: "Non-Reactionary",
+        label: "Stalwart",
         icon: faSyncAlt,
       },
     ],
@@ -1586,11 +1588,11 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       'So for example, left-wing reactionary ideologies flare up in response to right-wing ideologies, and right-wing ideologies flare up in response to left-wing ideologies. But what I\'m really concerned about here is the reactionary centrist ideologies. See, reactionary centrists are something that we\'ve really overlooked in our political discourse -- they\'re people who view too much polarization on both sides. They abandon all their morals and all their values and they position themselves in the dead center between two extremes because they view themselves as "mEnDiNg a bRoKeN sYsTeM" and "cReAtInG bIpArTiSaNsHiP cHaNgE" and "kEePiNg pEoPlE tOgEtHeR." These people are the worst of them all. We gotta get rid of \'em.',
     endpoints: [
       {
-        label: "Left-Wing Reactionary",
+        label: "Left-Wing",
         icon: faLongArrowAltLeft,
       },
       {
-        label: "Right-Wing Reactionary",
+        label: "Right-Wing",
         // heh, alt-right
         icon: faLongArrowAltRight,
       },
@@ -1765,11 +1767,11 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       'On the multiculturalism end of the spectrum we have people who want people to keep their own diverse cultures while integrating with the community, or just in general globally keep their own cultures. Assimilationists want those cultures to merge with the cultures -- for example, if an immigrant comes into America, they want that immigrant to become a staunch red-blooded American with red-blooded American values. A multiculturalist would be like "Ok, well you can still keep your religion, you can keep your language, it\'s ok for you to keep all those things," while an assimilationist would say "You\'re speaking English, you\'re adopting our values, etc."',
     endpoints: [
       {
-        label: "Multiculturalism",
+        label: "Multicultural",
         icon: faIcons,
       },
       {
-        label: "Assimilationism",
+        label: "Assimilation",
         icon: faEraser,
       },
     ],
