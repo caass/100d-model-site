@@ -127,7 +127,6 @@ import {
   faThermometerFull,
   faCompressArrowsAlt,
   faExpandArrowsAlt,
-  faDemocrat,
   faHandHoldingUsd,
   faShapes,
   faHeartbeat,
@@ -168,6 +167,7 @@ import {
   faKissWinkHeart,
   faFrownOpen,
 } from "@fortawesome/free-solid-svg-icons";
+import { faCircle } from "@fortawesome/free-regular-svg-icons";
 import {
   faAmazon,
   faAccessibleIcon,
@@ -226,7 +226,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
     shortName: "cultural",
     longName: "Cultural Axis",
     description:
-      "The cultural left wants to redistribute and kind of like...open up places in culture and society for more kinds of people. Cultural right wants to close up more and more areas and concentrate cultural power within the hands of fewer people. If you think more kinds of people deserve more kinds of equality you're more culturally left, and if you think less (sic) kinds of people deserve less kinds of equality, and you kind of like...balk at the idea of \"equality\", you're probably more culturally right.",
+      "The cultural left wants to redistribute and kind of like...open up places in culture and society for more kinds of people. Cultural right wants to close up more and more areas and concentrate cultural power within the hands of fewer people. If you think more kinds of people deserve more kinds of equality you're more culturally left, and if you think less kinds of people deserve less kinds of equality, and you kind of like...balk at the idea of \"equality\", you're probably more culturally right.",
     endpoints: [
       {
         label: "Progressive",
@@ -1201,7 +1201,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       "How many friends do proponents of this ideology tend to have?",
     endpoints: [
       {
-        label: "0",
+        label: "None",
         icon: faUserTimes,
       },
       {
@@ -1404,7 +1404,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
     shortName: "grimace",
     longName: "That specific face",
     description:
-      "How likely are people in this ideology to make the specific face at 26:54 in Jreg's video?",
+      "How likely are people in this ideology to make the specific face where it looks like a grimace except turned up to 11?",
     endpoints: [
       {
         label: "Not at all",
@@ -1488,7 +1488,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
     endpoints: [
       {
         label: "Tolerant",
-        icon: faDemocrat,
+        icon: faCircle,
       },
       {
         label: "Intolerant",
@@ -1503,7 +1503,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       'Constructivists think that things are how they are because the environment around them shaped them that way. Essentialists think that things are the way they are because they just _are_ that way. For example, constructivists tend to be in favor of rehabilitative justice because a criminal is a criminal because the environment created that criminal, while essentialists think the criminal was born a criminal and we should just throw them in jail forever because they\'re probably never going to change. The same thing goes for broader issues, like capitalism. Constructivists might say "Capitalism is just a byproduct of its environment, and we can remove it." An essentialist might say "Capitalism is there because capitalism needs to be there."',
     endpoints: [
       {
-        label: "Construct.",
+        label: "Constr.",
         icon: faShapes,
       },
       {
@@ -1791,7 +1791,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
     shortName: "democracy",
     longName: "Democracy",
     description:
-      "The democracy spectrum dictates who gets a say in determining how the system turns out. In the far authoritarian quadrant (sic) you have maybe just a couple people, maybe just one person deciding everything. On the far left of the spectrum, you have every single individual having a say in what goes on.",
+      "The democracy spectrum dictates who gets a say in determining how the system turns out. In the far authoritarian quadrant you have maybe just a couple people, maybe just one person deciding everything. On the far left of the spectrum, you have every single individual having a say in what goes on.",
     endpoints: [
       {
         label: "Democracy",

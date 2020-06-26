@@ -57,6 +57,7 @@ it("has well-formed titles", () => {
   bad title
   [blanks are ok]
   Good Title
+  Good title as well
   Also Ok?
   Good/Title
   Bad/title
