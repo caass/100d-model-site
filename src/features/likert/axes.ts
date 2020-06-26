@@ -81,7 +81,6 @@ import {
   faEgg,
   faHandPeace,
   faPhone,
-  faHandMiddleFinger,
   faHeartBroken,
   faSoap,
   faBong,
