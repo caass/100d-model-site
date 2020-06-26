@@ -1,0 +1,106 @@
+.likert-group,
+.likert {
+  padding: 0 1rem 3rem 1rem;
+
+  margin: 1.3rem 0;
+
+  border: 0.2rem solid #fafafa;
+  border-radius: 3rem;
+
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fafafa;
+
+  line-height: 1.2rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 65%;
+}
+
+.likert-group .likert {
+  padding: 0;
+  border: none;
+  background: none;
+  width: 100%;
+}
+
+.likert form {
+  width: 100%;
+}
+
+.likert-group > span,
+.likert legend {
+  font-weight: 200;
+}
+
+.likert-group > h4 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.likert > h4 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.form-options {
+  border: none;
+  padding: 0;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+.form-options-2-endpoints {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-options-2-endpoints > .form-option {
+  height: 3rem;
+  max-width: 23%;
+  min-width: 20%;
+  text-align: center;
+  margin-bottom: 1rem;
+  hyphens: auto;
+}
+
+.form-options-3-endpoints {
+}
+
+.form-option {
+  font-weight: 350;
+  font-size: 1.5rem;
+}
+
+.form-option svg {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-option label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.5;
+}
+
+.form-option label span {
+  line-height: 1.5rem;
+}
+
+.form-option:hover label,
+.form-option:focus label,
+.form-option-selected label {
+  opacity: 1;
+}
+
+input[type="radio"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}

@@ -81,7 +81,6 @@ import {
   faEgg,
   faHandPeace,
   faPhone,
-  faSignLanguage,
   faHandMiddleFinger,
   faHeartBroken,
   faSoap,
@@ -163,6 +162,7 @@ import {
   faVoteYea,
   faCrown,
   faDiceD20,
+  faAmericanSignLanguageInterpreting,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faAmazon,
@@ -254,7 +254,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
     shortName: "time",
     longName: "The Fourth Spectrum is Time",
     description:
-      "Some people will try to tell you that time isn't the fourth dimension. Those people are wrong. You can plot somebody's political direction over time by using the fourth dimension. Imagine you slide the fourth dimensional slider, and you can see how someone's political values change as that slider moves from the beginning of their life to the end of their life. Editor's note: I guess this spectrum is just...your age?",
+      "Some people will try to tell you that time isn't the fourth dimension. Those people are wrong. You can plot somebody's political direction over time by using the fourth dimension. Imagine you slide the fourth dimensional slider, and you can see how someone's political values change as that slider moves from the beginning of their life to the end of their life.",
     endpoints: [
       {
         label: "Baby",
@@ -291,7 +291,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
         shortName: "tech-accel",
         longName: "Technological",
         description:
-          "On the de-acceleration side, you have anarcho-primitivists, who are essentially luddites who want to stop the flow of technology because they think it's damaging to humans as a whole. On the other end, you have trans-humanists, who want to accelerate the progress of technology so they can finally get that robot d*ck they've always wanted.",
+          "On the de-acceleration side, you have anarcho-primitivists, who are essentially luddites who want to stop the flow of technology because they think it's damaging to humans as a whole. On the other end, you have trans-humanists, who want to accelerate the progress of technology so they can finally get that robot dick they've always wanted.",
         endpoints: [
           {
             label: "Decceleration",
@@ -361,6 +361,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "matriarchal",
         longName: "Matriarchal / Patriarchal",
+
         endpoints: [
           {
             label: "Matriarchal",
@@ -375,6 +376,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "gay",
         longName: "Gay Inclusive / Exclusive",
+
         endpoints: [
           {
             label: "Gay Exclusive",
@@ -389,6 +391,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "race",
         longName: "Racially Inclusive / Exclusive",
+
         endpoints: [
           {
             label: "Racially Exclusive",
@@ -403,6 +406,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "bi",
         longName: "Bi Inclusive / Exclusive",
+
         endpoints: [
           {
             label: "Bi Exclusive",
@@ -417,6 +421,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "age",
         longName: "Age Inclusive / Exclusive",
+
         endpoints: [
           {
             label: "Age Exclusive",
@@ -431,6 +436,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "trans",
         longName: "Trans Inclusive / Exclusive",
+
         endpoints: [
           {
             label: "Trans Exclusive",
@@ -445,6 +451,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "disabled",
         longName: "Disabled Inclusive / Exclusive",
+
         endpoints: [
           {
             label: "Disabled Exclusive",
@@ -459,6 +466,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "enby",
         longName: "Non-Binary Inclusive / Exclusive",
+
         endpoints: [
           {
             label: "Non-Binary Exclusive",
@@ -473,6 +481,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "queer",
         longName: "Queer Inclusive / Exclusive",
+
         endpoints: [
           {
             label: "Queer Exclusive",
@@ -487,6 +496,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "exclusive",
         longName: "Inclusive / Exclusive to Exclusive People",
+
         endpoints: [
           {
             label: "Exclusive Exclusive",
@@ -630,7 +640,8 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
   },
   {
     shortName: "billionaires",
-    longName: "How Much Tax Should Billionaires Pay",
+    longName: "Billionare Tax",
+    description: "How much tax should billionaires pay?",
     endpoints: [
       {
         label: "None",
@@ -700,23 +711,24 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       "You may associate the left with environmental protection, but that's not a rule. This is why you have stuff like eco-fascism.",
     endpoints: [
       {
-        label: "F*** the Earth",
+        label: "Drill, baby! Drill!",
         icon: faIndustry,
       },
       {
-        label: "Environmentally Conscious",
+        label: "Conscious",
         icon: faLeaf,
       },
     ],
   },
   {
-    label: "eugenics",
+    label: "Eugenics",
     description:
       "On the left, you want these kinds of people to be having more babies. On the right, you want these kinds of people to be having less babies.",
     axes: [
       {
         shortName: "racial-eugenics",
         longName: "Racial Eugenics",
+
         endpoints: [
           {
             label: "Sterilize",
@@ -731,6 +743,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "economic-eugenics",
         longName: "Economic Eugenics",
+
         endpoints: [
           {
             label: "Sterilize",
@@ -745,6 +758,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "abled-eugenics",
         longName: "Abled Eugenics",
+
         endpoints: [
           {
             label: "Sterilize",
@@ -759,6 +773,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "iq-eugenics",
         longName: "IQ Eugenics",
+
         endpoints: [
           {
             label: "Sterilize",
@@ -773,6 +788,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "ideological-eugenics",
         longName: "Ideological Eugenics",
+
         endpoints: [
           {
             label: "Sterilize",
@@ -787,6 +803,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "eugenicist-eugenics",
         longName: "Eugenicist Eugenics",
+
         endpoints: [
           {
             label: "Sterilize",
@@ -801,6 +818,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "me-eugenics",
         longName: "Just fucking euthanize me",
+
         endpoints: [
           {
             label: "Sterilize",
@@ -902,7 +920,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
         icon: faTimesCircle,
       },
       {
-        label: "Yo lemme hit that",
+        label: "Pass the Blunt",
         icon: faJoint,
       },
     ],
@@ -966,7 +984,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
         icon: faSkull,
       },
       {
-        label: "Halfway done woo!!",
+        label: "Halfway there!",
         icon: faGrinHearts,
       },
     ],
@@ -974,6 +992,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
   {
     shortName: "blank",
     longName: "",
+
     endpoints: [
       {
         label: "",
@@ -996,7 +1015,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
         icon: faMehBlank,
       },
       {
-        label: "uhh...sorry?",
+        label: "uhh... sorry?",
         icon: faMehBlank,
       },
     ],
@@ -1036,7 +1055,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
   {
     shortName: "fuck",
     longName: "Would you?",
-    description: "If this ideology was a person, would you f*** them?",
+    description: "If this ideology was a person, would you fuck them?",
     endpoints: [
       {
         label: "Never in a million years",
@@ -1044,7 +1063,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       },
       {
         label: "All day every day",
-        icon: faSignLanguage,
+        icon: faAmericanSignLanguageInterpreting,
       },
     ],
   },
@@ -1066,7 +1085,8 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
   },
   {
     shortName: "help",
-    longName: "Why are all [Jreg's] videos cries for help?",
+    longName: "Why are all Jreg's videos cries for help?",
+
     endpoints: [
       {
         label: "help",
@@ -1089,7 +1109,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
         icon: faSoap,
       },
       {
-        label: "F***ed Up",
+        label: "Literally Constantly",
         icon: faBong,
       },
     ],
@@ -1339,6 +1359,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
   {
     shortName: "dank",
     longName: "Dank vs. Normie",
+
     endpoints: [
       {
         label: "Dank",
@@ -1599,6 +1620,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "goodevil",
         longName: "Good vs. Evil",
+
         endpoints: [
           {
             label: "Good",
@@ -1613,6 +1635,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
       {
         shortName: "chaotic",
         longName: "Chaotic vs. Lawful",
+
         endpoints: [
           {
             label: "Chaotic",
@@ -1676,6 +1699,7 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
   {
     shortName: "minecraft",
     longName: "Minecraft or Fortnite",
+
     endpoints: [
       {
         label: "Minecraft",
@@ -1706,6 +1730,8 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
   {
     shortName: "penis",
     longName: "Metaphorical Penis Size",
+    description:
+      "What is the metaphorical penis size of followers of this ideology?",
     endpoints: [
       {
         label: "Micropenis",
@@ -1782,4 +1808,4 @@ export const axes: Array<SpectrumAxis | SpectrumAxisGroup> = [
   },
 ];
 
-export type { SpectrumAxis, SpectrumAxisGroup };
+export type { SpectrumAxis, SpectrumAxisGroup, SpectrumEndpoint };

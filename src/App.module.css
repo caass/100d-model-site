@@ -1,0 +1,9 @@
+.app-wrapper {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.app-wrapper > * {
+  max-width: 900px;
+}
